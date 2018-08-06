@@ -11,6 +11,12 @@ function renderBooks(json) {
   })
 }
 
+function fetchHouses() {
+  // fetch the houses from the API
+  // list them on the page
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
+  fetchHouses()
 })
