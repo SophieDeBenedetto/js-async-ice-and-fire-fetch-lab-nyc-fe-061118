@@ -1,6 +1,7 @@
 function fetchBooks() {
-  fetch("https://anapioficeandfire.com/api/houses")
-    .then(resp => resp.json())
+  fetch("https://anapioficeandfire.com/api/houses", {
+   mode: 'no-cors'
+  }).then(resp => resp.json())
     .then(json => renderBooks(json))
 }
 
