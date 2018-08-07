@@ -1,7 +1,4 @@
 function fetchBooks() {
-  var myRequest = new Request("https://anapioficeandfire.com/api/houses");
-  var myMode = myRequest.mode; // returns "cors" by default
-
   fetch("https://anapioficeandfire.com/api/houses")
     .then(resp => resp.json())
     .then(json => renderBooks(json))
